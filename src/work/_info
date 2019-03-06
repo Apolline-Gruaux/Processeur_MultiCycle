@@ -188,22 +188,59 @@ R12
 R13
 !s100 :1iDZLBeMgHhBWDej]PD=3
 !i10b 1
+Elinkregister
+Z38 w1551859577
+R2
+R3
+R4
+R5
+Z39 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/LinkRegister.vhd
+Z40 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/LinkRegister.vhd
+l0
+L5
+V0eo0A9?6I;RIUNf62UC053
+R8
+32
+Z41 !s108 1551859616.686000
+Z42 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/LinkRegister.vhd|
+Z43 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/LinkRegister.vhd|
+R12
+R13
+!s100 K_c6SoU<NJhodT51=NOP01
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 12 linkregister 0 22 0eo0A9?6I;RIUNf62UC053
+l18
+L14
+VV5?fcjA?_FT`2j8eQIZV<0
+R8
+32
+R41
+R42
+R43
+R12
+R13
+!s100 J2S>azRHK]0@2HE3kNX^F3
+!i10b 1
 Emux21
 R32
 R2
 R3
 R4
 R5
-Z38 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX21.vhd
-Z39 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX21.vhd
+Z44 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX21.vhd
+Z45 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX21.vhd
 l0
 L5
 V2@cYTPQZ;5AG2mYFm9m@c0
 R8
 32
-Z40 !s108 1550744779.873000
-Z41 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX21.vhd|
-Z42 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX21.vhd|
+Z46 !s108 1550744779.873000
+Z47 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX21.vhd|
+Z48 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX21.vhd|
 R12
 R13
 !s100 U=BhGTOO;oR<3XhfJccKF0
@@ -218,29 +255,29 @@ L14
 VIhXSDUbB5G^KM[6N;iUmX1
 R8
 32
-R40
-R41
-R42
+R46
+R47
+R48
 R12
 R13
 !s100 kJ53mGJJSU:=^XQRc=8dG1
 !i10b 1
 Emux41
-Z43 w1550744762
+Z49 w1550744762
 R2
 R3
 R4
 R5
-Z44 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX41.vhd
-Z45 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX41.vhd
+Z50 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX41.vhd
+Z51 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX41.vhd
 l0
 L5
 VIbPCKnen9_]Vgj6T[Mc]_3
 R8
 32
-Z46 !s108 1550744841.144000
-Z47 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX41.vhd|
-Z48 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX41.vhd|
+Z52 !s108 1550744841.144000
+Z53 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX41.vhd|
+Z54 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX41.vhd|
 R12
 R13
 !s100 6NbiSJK`F8eKn_IDm55k?1
@@ -255,12 +292,197 @@ L14
 V^`LSjek=4A5c[Ff:aKTc>3
 R8
 32
-R46
-R47
-R48
+R52
+R53
+R54
 R12
 R13
 !s100 =jcOcz5l6YZW[T1MbFVmn2
+!i10b 1
+Emux_alu_a
+Z55 w1551862025
+R2
+R3
+R4
+R5
+Z56 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_ALU_A.vhd
+Z57 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_ALU_A.vhd
+l0
+L5
+Ve2kSYLdJ0f[4SVbWm0H^I0
+R8
+32
+Z58 !s108 1551862029.858000
+Z59 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_ALU_A.vhd|
+Z60 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_ALU_A.vhd|
+R12
+R13
+!s100 [Y`oD6>H4M?7d02geP[e@3
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 9 mux_alu_a 0 22 e2kSYLdJ0f[4SVbWm0H^I0
+l16
+L14
+VBWN`BUFA<o^U6GahEQ7Sc1
+R8
+32
+R58
+R59
+R60
+R12
+R13
+!s100 BO>ihMAVkUEzfU?830l:_1
+!i10b 1
+Emux_alu_b
+Z61 w1551862074
+R2
+R3
+R4
+R5
+Z62 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_ALU_B.vhd
+Z63 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_ALU_B.vhd
+l0
+L5
+V=Tj_iX]V<VCDcM;:JZ?611
+!s100 7He_=HC@5>_QX`2TYH=P;2
+R8
+32
+!i10b 1
+Z64 !s108 1551862079.548000
+Z65 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_ALU_B.vhd|
+Z66 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_ALU_B.vhd|
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 9 mux_alu_b 0 22 =Tj_iX]V<VCDcM;:JZ?611
+l16
+L14
+Vh`bmdI[@;F6@GL[VTn]kf1
+!s100 :<eVEJ0]POm0HOBPeKg7W2
+R8
+32
+!i10b 1
+R64
+R65
+R66
+R12
+R13
+Emux_mem
+Z67 w1551860248
+R2
+R3
+R4
+R5
+Z68 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_MEM.vhd
+Z69 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_MEM.vhd
+l0
+L5
+VJ;oGIoOmAEZ]KHd[IihC83
+R8
+32
+Z70 !s108 1551860255.714000
+Z71 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_MEM.vhd|
+Z72 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_MEM.vhd|
+R12
+R13
+!s100 IeWhN1_YNoZ@]S9DAYD3G1
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 7 mux_mem 0 22 J;oGIoOmAEZ]KHd[IihC83
+l16
+L14
+VZ?c`CFih:B3MlL?Rfa`JU2
+R8
+32
+R70
+R71
+R72
+R12
+R13
+!s100 f9;n8Rjk=k5@b0`[E?dzg1
+!i10b 1
+Emux_reg_busw
+Z73 w1551861439
+R2
+R3
+R4
+R5
+Z74 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_BUSW.vhd
+Z75 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_BUSW.vhd
+l0
+L5
+VQHUg25Jf1fi6SlIM>MAgT0
+R8
+32
+Z76 !s108 1551861447.165000
+Z77 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_BUSW.vhd|
+Z78 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_BUSW.vhd|
+R12
+R13
+!s100 c_lY238ec[L]?<]6^V81T1
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 12 mux_reg_busw 0 22 QHUg25Jf1fi6SlIM>MAgT0
+l16
+L14
+Vzh[Tbh:R@8:_6^W?1iPTk3
+R8
+32
+R76
+R77
+R78
+R12
+R13
+!s100 >oNcDeF<6OkN[N1YM`H>i3
+!i10b 1
+Emux_reg_rb
+Z79 w1551861093
+R2
+R3
+R4
+R5
+Z80 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_RB.vhd
+Z81 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_RB.vhd
+l0
+L5
+VFkl?46zmBDL>J`5Mdj`fn0
+R8
+32
+Z82 !s108 1551861094.103000
+Z83 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_RB.vhd|
+Z84 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_RB.vhd|
+R12
+R13
+!s100 4H^TFAobIV?>PPZDfOg=42
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 10 mux_reg_rb 0 22 Fkl?46zmBDL>J`5Mdj`fn0
+l16
+L13
+VL=^bFRS]8aO>ReVGz57f^2
+R8
+32
+R82
+R83
+R84
+R12
+R13
+!s100 Tmf][LJSVa65`;[Mgl;LG3
 !i10b 1
 Epcextender
 R32
@@ -269,16 +491,16 @@ R2
 R3
 R4
 R5
-Z49 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/PCExtender.vhd
-Z50 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/PCExtender.vhd
+Z85 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/PCExtender.vhd
+Z86 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/PCExtender.vhd
 l0
 L6
 VI6OD:=QNPcDgD2VVIE[UA0
 R8
 32
-Z51 !s108 1550744778.817000
-Z52 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/PCExtender.vhd|
-Z53 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/PCExtender.vhd|
+Z87 !s108 1550744778.817000
+Z88 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/PCExtender.vhd|
+Z89 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/PCExtender.vhd|
 R12
 R13
 !s100 oTFBZKfgd[iRmcm?FlX:>3
@@ -294,9 +516,9 @@ L13
 VUfOeiM[mPR6PYGCFBfZ`M2
 R8
 32
-R51
-R52
-R53
+R87
+R88
+R89
 R12
 R13
 !s100 jGf3MInbeG[;3JZ7E@_0e3
@@ -307,16 +529,16 @@ R2
 R3
 R4
 R5
-Z54 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Register_bench.vhd
-Z55 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Register_bench.vhd
+Z90 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Register_bench.vhd
+Z91 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Register_bench.vhd
 l0
 L5
 VT4FfAmPFCOMzNH=CX^Tn21
 R8
 32
-Z56 !s108 1550744777.735000
-Z57 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Register_bench.vhd|
-Z58 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Register_bench.vhd|
+Z92 !s108 1550744777.735000
+Z93 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Register_bench.vhd|
+Z94 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Register_bench.vhd|
 R12
 R13
 !s100 n3G5P]TRT]H=XRlQCWeUV3
@@ -331,29 +553,29 @@ L14
 VQSbGK1O[OVWj8HbO@Bg@]2
 R8
 32
-R56
-R57
-R58
+R92
+R93
+R94
 R12
 R13
 !s100 3^FLzGTaGl?GQA5kWDAAX1
 !i10b 1
 Eregistre32
-Z59 w1550745199
+Z95 w1550745199
 R2
 R3
 R4
 R5
-Z60 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Registre32.vhd
-Z61 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Registre32.vhd
+Z96 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Registre32.vhd
+Z97 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Registre32.vhd
 l0
 L5
 VheZFgVmZ0C_bdjS65Q6^g2
 R8
 32
-Z62 !s108 1550745242.238000
-Z63 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Registre32.vhd|
-Z64 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Registre32.vhd|
+Z98 !s108 1550745242.238000
+Z99 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Registre32.vhd|
+Z100 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Registre32.vhd|
 R12
 R13
 !s100 mU2:jWYGJ4>UUfPlToO2_0
@@ -368,28 +590,176 @@ L13
 Vl7^Wj7Y8@lbXF5RCX6^JU0
 R8
 32
-R62
-R63
-R64
+R98
+R99
+R100
 R12
 R13
 !s100 bSG;lPJBalWAYJcQ@?W]G2
+!i10b 1
+Eregistrea
+Z101 w1551861791
+R2
+R3
+R4
+R5
+Z102 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreA.vhd
+Z103 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreA.vhd
+l0
+L5
+VSi2XdU^eHOjhNT69bk`PD0
+R8
+32
+Z104 !s108 1551861843.655000
+Z105 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreA.vhd|
+Z106 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreA.vhd|
+R12
+R13
+!s100 @mC>8B>>z;]R><F3]nI1[1
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 9 registrea 0 22 Si2XdU^eHOjhNT69bk`PD0
+l17
+L13
+VCzHJH9>X]i;EG_CPgTeES1
+R8
+32
+R104
+R105
+R106
+R12
+R13
+!s100 jHCTf0^MjlIF9UXl1H[YT2
+!i10b 1
+Eregistreb
+Z107 w1551861834
+R2
+R3
+R4
+R5
+Z108 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreB.vhd
+Z109 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreB.vhd
+l0
+L5
+VHH9OMRfG<dl3VVbhZH[]G3
+R8
+32
+Z110 !s108 1551861845.208000
+Z111 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreB.vhd|
+Z112 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreB.vhd|
+R12
+R13
+!s100 V@A49o8?bQ^99<GJ`3a7S2
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 9 registreb 0 22 HH9OMRfG<dl3VVbhZH[]G3
+l17
+L13
+VMR5`3?M5i]E@S0=lWVCAD1
+R8
+32
+R110
+R111
+R112
+R12
+R13
+!s100 e0UU36i`RFN4:f=?`C2l?3
+!i10b 1
+Eregistreinstruction
+Z113 w1551859979
+R2
+R3
+R4
+R5
+Z114 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreInstruction.vhd
+Z115 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreInstruction.vhd
+l0
+L5
+VUA3me6eAGBb<RhjbE9POK3
+R8
+32
+Z116 !s108 1551860073.418000
+Z117 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreInstruction.vhd|
+Z118 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreInstruction.vhd|
+R12
+R13
+!s100 >_oG6oCXX^DnMaBMG^QMf0
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 19 registreinstruction 0 22 UA3me6eAGBb<RhjbE9POK3
+l18
+L14
+V=J5Xe=D40ET72D0l6ClG;1
+R8
+32
+R116
+R117
+R118
+R12
+R13
+!s100 R?mhO=BbCOEn<8jJB6^bc2
+!i10b 1
+Eregistrepc
+Z119 w1551859217
+R2
+R3
+R4
+R5
+Z120 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistrePC.vhd
+Z121 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistrePC.vhd
+l0
+L5
+V7i0BY@ROWQN]B`L:1Q1AM0
+R8
+32
+Z122 !s108 1551859614.160000
+Z123 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistrePC.vhd|
+Z124 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistrePC.vhd|
+R12
+R13
+!s100 i;n<f^=?WgSTY_RXHhj`j3
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 10 registrepc 0 22 7i0BY@ROWQN]B`L:1Q1AM0
+l18
+L14
+VR3BC1m_G<NYokfO:4LOIn3
+R8
+32
+R122
+R123
+R124
+R12
+R13
+!s100 ne_jH^23;V5gb0gVELPGR1
 !i10b 1
 Etest_arm
 R14
 R3
 R4
 R5
-Z65 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/test_arm.vhd
-Z66 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/test_arm.vhd
+Z125 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/test_arm.vhd
+Z126 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/test_arm.vhd
 l0
 L4
 Vl8S:WIbcFon5i`JnhMHS21
 R8
 32
-Z67 !s108 1550744772.658000
-Z68 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/test_arm.vhd|
-Z69 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/test_arm.vhd|
+Z127 !s108 1550744772.658000
+Z128 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/test_arm.vhd|
+Z129 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/test_arm.vhd|
 R12
 R13
 !s100 Aj6<QgP[[1g76aV7oRDe]1
@@ -403,9 +773,9 @@ L7
 VU?=HM7H9]]T399PKko3B21
 R8
 32
-R67
-R68
-R69
+R127
+R128
+R129
 R12
 R13
 !s100 Ko;zZ>B_dO:X4GIS3@hE]2
@@ -415,20 +785,20 @@ w1550749608
 R3
 R4
 R5
-Z70 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/VIC.vhd
-Z71 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/VIC.vhd
+Z130 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/VIC.vhd
+Z131 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/VIC.vhd
 l0
 L4
 V;IoOaOfe?aYM<n7HEB@Af0
-!s100 `RCm1QHmGAnIg5>[KLJ4J1
 R8
 32
-!i10b 1
-!s108 1550749612.325000
-Z72 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/VIC.vhd|
-!s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/VIC.vhd|
+Z132 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/VIC.vhd|
 R12
 R13
+Z133 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/VIC.vhd|
+!s100 `RCm1QHmGAnIg5>[KLJ4J1
+!i10b 1
+!s108 1550749612.325000
 Artl
 R3
 R4
@@ -438,11 +808,11 @@ L12
 VNgj1KEL6z:d?aRjVaYAOh1
 R8
 32
-!s108 1550749521.715000
-R72
-!s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/VIC.vhd|
+R132
 R12
 R13
 w1550749518
+R133
+!s108 1550749521.715000
 !s100 Y<2R`9MAX5UFV>g;iMH:=1
 !i10b 1
