@@ -9,10 +9,10 @@ architecture arc_test_arm of test_arm is
 --declaration des composants:
 component arm
 port(
-      clk: in std_logic;
-       irq0,irq1 : std_logic;
-       rst: in std_logic;
-       resultat          : out std_logic_vector(31 downto 0)
+       clk          : in std_logic;
+       irq0,irq1    : std_logic;
+       rst          : in std_logic;
+       resultat     : out std_logic_vector(31 downto 0)
 );
 end component;
 
@@ -28,7 +28,7 @@ begin
  
 --instanciation des composants
 arm_1: arm
-port map(clkt,irq0t,irq1t,rstt,res);
+port map(clk => clkt, irq0 => irq0t, irq1 => irq1t, rst => rstt, resultat => res);
 
 --processus de simulation
  rstt<='0','1' after 25 ns,'0' after 35 ns;
@@ -41,9 +41,9 @@ port map(clkt,irq0t,irq1t,rstt,res);
      
      
    end process generate_clock;
-
-irq0t<='0';
-irq1t<='0';  
+    
+  irq0t<='0';
+  irq1t<='0';
 
 end architecture arc_test_arm;
 

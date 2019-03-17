@@ -1,31 +1,20 @@
-library IEEE;
-  use IEEE.std_logic_1164.ALL;
-  use IEEE.numeric_std.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+
 
 Entity MUX21 is 
-  generic ( N : positive := 32);
-  port (A, B : in std_logic_vector(N-1 downto 0);
-    COM : in std_logic;
-    S : out std_logic_vector(N-1 downto 0)
-  );
-  
+  generic( N : natural := 32);
+  port( A, B : in std_logic_vector(N-1 downto 0);
+        COM  : in std_logic;
+        S    : out std_logic_vector(N-1 downto 0));
 end entity;
 
-architecture RTL of MUX21 is
-  
-begin
-  
-  process(COM, A, B)
+Architecture behav of MUX21 is
+  Begin
     
-  begin
+    with COM select
+      S <= A when '0',
+           B when '1',
+           (others => '0') when others;
     
-    case(COM) is
-    
-    when '0' => S <= A;
-    when others => S <= B;
-      
-    end case;
-    
-  end process;
-  
-end architecture;
+end architecture behav;

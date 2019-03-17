@@ -1,10 +1,10 @@
 ------------------------------------------------------------------
---																--
---					PROCESSEUR MULTI-CYCLES						--
---						CHEMIN DE DONNEES						--
---																--
----						(c) 2010-2012							--
--- 		A.Mocco, N.Hamila, M.Fonseca, J.Denoulet, P.Garda		--
+--																                --
+--					PROCESSEUR MULTI-CYCLES					             --
+--						CHEMIN DE DONNEES						             --
+--																                --
+--  						(c) 2010-2012							          --
+-- 		A.Mocco, N.Hamila, M.Fonseca, J.Denoulet, P.Garda		 --
 -----------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -80,44 +80,44 @@ architecture archi of DataPath is
 
 	----------------------------------------------------
 	-- Memoire Interne
-	component intern_memory IS
+	component RAM64x32 IS
 	PORT (
-		clock		: IN 	STD_LOGIC ;
-		data		: IN 	STD_LOGIC_VECTOR (31 DOWNTO 0);
-		rdaddress: IN 	STD_LOGIC_VECTOR (5 DOWNTO 0);
-		rden		: IN 	STD_LOGIC  := '1';
-		wraddress: IN 	STD_LOGIC_VECTOR (5 DOWNTO 0);
-		wren		: IN 	STD_LOGIC  := '1';
-		q			: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+		clock		   : IN 	STD_LOGIC ;
+		data		   : IN 	STD_LOGIC_VECTOR (31 DOWNTO 0);
+		rdaddress 	: IN 	STD_LOGIC_VECTOR (5 DOWNTO 0);
+		rden		   : IN 	STD_LOGIC  := '1';
+		wraddress 	: IN 	STD_LOGIC_VECTOR (5 DOWNTO 0);
+		wren		   : IN 	STD_LOGIC  := '1';
+		q			   : OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
 	);
-	END component intern_memory;
+	END component RAM64x32;
 	----------------------------------------------------
 
 	----------------------------------------------------
 	-- Registre
-	component Reg is
+	component REG32 is
 	port  (
 		datain	: in 	std_logic_vector(31 downto 0);
 		rst,clk	: in 	std_logic;
 		dataout	: out std_logic_vector(31 downto 0)
 	);
-	end component Reg;
+	end component REG32;
 	----------------------------------------------------
 
 	----------------------------------------------------
 	-- Registre avec Commande de Chargement
 	component RegLd is
 	port  (
-		datain		: in 	std_logic_vector(31 downto 0);
-		rst,clk,we	: in 	std_logic;
-		dataout		: out std_logic_vector(31 downto 0)
+		datain		   : in 	std_logic_vector(31 downto 0);
+		rst,clk,we		: in 	std_logic;
+		dataout		  	: out std_logic_vector(31 downto 0)
 	);
 	end component RegLd;
 	----------------------------------------------------
 
 	----------------------------------------------------
 	-- Banc de Registres
-	component RegBank is
+	component register_bank is
 	port	(
 		clk	: IN 	STD_LOGIC ;
 		w		: IN 	STD_LOGIC_VECTOR (31 DOWNTO 0);
@@ -128,36 +128,36 @@ architecture archi of DataPath is
 		a		: OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
 		b		: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
 	);  
-	end component RegBank;
+	end component register_bank;
 	----------------------------------------------------
 
 	----------------------------------------------------
 	-- Mux 2 -> 1
-	component mux2v1 is
+	component MUX21 is
 	generic (n: natural:=32);
 	port	(
 		a,b	: in 	std_logic_vector (n-1 downto 0);
 		com	: in 	std_logic;
 		s		: out std_logic_vector (n-1 downto 0)
 	);
-	end component mux2v1;
+	end component MUX21;
 	----------------------------------------------------
 
 	----------------------------------------------------
 	-- Mux 4 -> 1
-	component mux4v1 is
+	component MUX41 is
 	generic (n: natural:=32);
 	port	(
-		a,b,c,d	: in 	std_logic_vector (n-1 downto 0);
-		com		: in 	std_logic_vector(1 downto 0);
-		s			: out std_logic_vector (n-1 downto 0)
+		a,b,c,d		: in 	std_logic_vector (n-1 downto 0);
+		com		   : in 	std_logic_vector(1 downto 0);
+		s			  	: out std_logic_vector (n-1 downto 0)
 	);
-	end component mux4v1;
+	end component MUX41;
 	----------------------------------------------------
 
 	----------------------------------------------------
 	-- Extenseur 32 Bits
-	component ext32 is
+	component imm_extender is
 	generic(n: natural:=8);
 	port(
 		e	: in 	std_logic_vector(n-1 downto 0);
@@ -170,10 +170,10 @@ architecture archi of DataPath is
 	-- ALU
 	component ALU is
 	port	(
-		a, b	: in 	std_logic_vector(31 downto 0);
-		op		: in 	std_logic_vector(1 downto 0);
-		s		: out std_logic_vector(31 downto 0);
-		n		: out std_logic
+		a, b	 : in 	std_logic_vector(31 downto 0);
+		op		 : in 	std_logic_vector(1 downto 0);
+		s		 : out 	std_logic_vector(31 downto 0);
+		n		 : out 	std_logic
 	);
 	end component ALU;
 	----------------------------------------------------
@@ -185,46 +185,46 @@ architecture archi of DataPath is
 
 
 	-- Memoire Interne
-	signal MemAdr    :std_logic_vector(5 downto 0);	-- Bus Adresses Memoire
-	signal MemDataOut       :std_logic_vector(31 downto 0); -- Bus Donnees LEcture Memoire
+	signal MemAdr    		:  std_logic_vector(5 downto 0);	-- Bus Adresses Memoire
+	signal MemDataOut    :  std_logic_vector(31 downto 0); -- Bus Donnees LEcture Memoire
 
 	-- Registres LR, A, B, ALU, IR, et DR
-	signal RegA	: std_logic_vector(31 downto 0);
-	signal RegB	: std_logic_vector(31 downto 0); -- Registre B + Bus Donnees Memoire
+	signal RegA		: std_logic_vector(31 downto 0);
+	signal RegB		: std_logic_vector(31 downto 0); -- Registre B + Bus Donnees Memoire
 	signal RegALU  : std_logic_vector(31 downto 0);
-	signal LR          :std_logic_vector(31 downto 0);
-	signal IR:std_logic_vector(31 downto 0); 
-	signal DR:std_logic_vector(31 downto 0);
+	signal LR      : std_logic_vector(31 downto 0);
+	signal IR		: std_logic_vector(31 downto 0); 
+	signal DR		: std_logic_vector(31 downto 0);
 
 	-- Registre PC
-	signal PC        : std_logic_vector (31 downto 0);
-	signal PCIn            :std_logic_vector(31 downto 0); -- Entree du Registre PC
+	signal PC      : std_logic_vector (31 downto 0);
+	signal PCIn    : std_logic_vector(31 downto 0); -- Entree du Registre PC
 	
 	-- Banc de Registres
-	signal MuxBusW   : std_logic_vector(31 downto 0);
-	signal MuxRBSel:std_logic;
-	signal MuxBusRB  :std_logic_vector(3 downto 0);
-	signal BusA      : std_logic_vector(31 downto 0);
-	signal BusB      : std_logic_vector(31 downto 0);
+	signal MuxBusW    : std_logic_vector(31 downto 0);
+	signal MuxRBSel	: std_logic;
+	signal MuxBusRB   : std_logic_vector(3 downto 0);
+	signal BusA       : std_logic_vector(31 downto 0);
+	signal BusB       : std_logic_vector(31 downto 0);
 
 	-- Extenseurs 32 bits
-	signal Imm8_32  :std_logic_vector(31 downto 0);
-	signal Imm24_32: std_logic_vector(31 downto 0);
+	signal Imm8_32  : std_logic_vector(31 downto 0);
+	signal Imm24_32 : std_logic_vector(31 downto 0);
 
 	-- Sortie du VIC
-	signal VICAdr          :std_logic_vector(31 downto 0); -- Sortie du VIC
+	signal VICAdr     : std_logic_vector(31 downto 0); -- Sortie du VIC
 
 	-- ALU
-	signal AluOut     :std_logic_vector(31 downto 0);	-- Sortie
-	signal AluInA,AluInB:std_logic_vector(31 downto 0);-- Entrees	
-	signal plus1    :std_logic_vector(31 downto 0); -- Constante: 1
+	signal AluOut     		: std_logic_vector(31 downto 0);	-- Sortie
+	signal AluInA,AluInB		: std_logic_vector(31 downto 0);-- Entrees	
+	signal plus1    			: std_logic_vector(31 downto 0); -- Constante: 1
 	signal FlagN: std_logic;	-- Drapeau N
 
 	-- Registres d'Etat (SPSR et CPSR)
 	signal CpsrFlag   : std_logic_vector(31 downto 0); -- CPSR avec Flag a jour
-	signal CpsrIn  :std_logic_vector(31 downto 0);	-- Entree Registre CPSR
-	signal Cpsr :std_logic_vector(31 downto 0);	-- Registre CPSR
-	signal Spsr : std_logic_vector(31 downto 0); 	-- Registre SPSR
+	signal CpsrIn  	: std_logic_vector(31 downto 0);	-- Entree Registre CPSR
+	signal Cpsr 		: std_logic_vector(31 downto 0);	-- Registre CPSR
+	signal Spsr 		: std_logic_vector(31 downto 0); 	-- Registre SPSR
  
 begin
 
@@ -239,7 +239,7 @@ VIC0:	VIC port map(
 		VICPC		=>	VICAdr );
 
 -- Mux Selection PC
-MuxPC : mux4v1 port map(
+MuxPC : MUX41 port map(
 			a				=>	AluOut,
 			b				=>	RegALU,
 			c				=>	LR,
@@ -263,14 +263,14 @@ LR0 : RegLd port map(
 			we				=>	LRWrEn,
 			dataout		=>	LR);
 
-MuxMem: mux2v1 generic map(6) port map(
+MuxMem: MUX21 generic map(6) port map(
 			a				=>	PC(5 downto 0),
 			b				=>	RegALU(5 downto 0),
 			com			=>	AdrSel,
 			s				=>	MemAdr);
 
 -- Memoire Interne
-Memoire:	intern_memory port map(
+Memoire:	RAM64x32 port map(
 			clock			=>	clk,
 			data			=>	RegB,
 			rdaddress	=>	MemAdr,
@@ -288,14 +288,14 @@ RegistreInstr	: RegLd port map(
 			dataout		=>	IR);
 
 -- Registre DR			
-RegistreData  	: Reg port map(
+RegistreData  	: REG32 port map(
 			datain		=>	MemDataOut,
 			rst			=>	rst,
 			clk			=>	clk,
 			dataout		=>	DR);
 
 --instanciation du mux2v1s32 qui sert � selectionner busW 
-MuxW0	: mux2v1 port map(
+MuxW0	: MUX21 port map(
 			a				=>	DR,
 			b				=>	RegALU,
 			com			=>	WSel,
@@ -305,14 +305,14 @@ MuxW0	: mux2v1 port map(
 MuxRBSel <= NOT(IR(27) OR IR(20)) AND IR(26);
 
 -- Mux Bus W du Banc de Registres
-MuxRB0 : mux2v1 generic map(4) port map(
+MuxRB0 : MUX21 generic map(4) port map(
 			a				=>	IR(3 downto 0),
 			b				=>	IR(15 downto 12),
 			com			=>	MuxRBSel,
 			s				=>	MuxBusRB);
 
 -- Banc de Registres
-BancReg: RegBank port map(
+BancReg: register_bank port map(
 			clk			=>	clk,
 			w				=>	MuxBusW,
 			ra				=>	IR(19 downto 16),
@@ -323,31 +323,31 @@ BancReg: RegBank port map(
 			b				=>	BusB);
 			
 -- Registre A
-RegA0: Reg port map(
+RegA0: REG32 port map(
 			datain		=>	BusA,
 			rst			=>	rst,
 			clk			=>	clk,
 			dataout		=>	RegA);
 
 -- Registre B
-RegB0: Reg port map(
+RegB0: REG32 port map(
 			datain		=>	BusB,
 			rst			=>	rst,
 			clk			=>	clk,
 			dataout		=>	RegB);
 
 -- Extenseur 8=>32
-Ext8_32 : ext32 port map(
+Ext8_32 : imm_extender generic map(8) port map(
 			e				=>	IR(7 downto 0),
 			s				=>	Imm8_32);
 
 -- Extenseur 24=>32
-Ext24_32: ext32 generic map(24) port map(
+Ext24_32: imm_extender generic map(24) port map(
 			e				=>	IR(23 downto 0),
 			s				=>	Imm24_32);
 
 -- Mux Selection Entree A ALU
-MuxAluA: mux2v1 port map(
+MuxAluA: MUX21 port map(
 			a				=>	PC,
 			b				=>	RegA,
 			com			=>	AluSelA,
@@ -357,7 +357,7 @@ MuxAluA: mux2v1 port map(
 plus1<=X"00000001";
 
 -- Mux Selection Entree B ALU
-MuxAluB : mux4v1 port map(
+MuxAluB : MUX41 port map(
 			a				=>	RegB,
 			b				=>	Imm8_32,
 			c				=>	Imm24_32,
@@ -374,7 +374,7 @@ ALU0 : ALU port map(
 			n				=>	FlagN);
 
 -- Registre ALU
-RegALU0: Reg port map(
+RegALU0: REG32 port map(
 			datain		=>	AluOut,
 			rst			=>	rst,
 			clk			=>	clk,
@@ -383,7 +383,7 @@ RegALU0: Reg port map(
 CpsrFlag<=FlagN & Cpsr(30 downto 0);
 
 -- Mux CPSR
-cpsrmux : mux2v1 port map(
+cpsrmux : MUX21 port map(
 			a				=>	CpsrFlag,
 			b				=>	Spsr,
 			com			=>	CpsrSel,
