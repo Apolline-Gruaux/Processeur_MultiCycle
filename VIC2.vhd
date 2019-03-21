@@ -1,0 +1,69 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity VIC2 is port(
+  CLK, RST : in std_logic;
+  serv_irq, IRQ0, IRQ1 : in std_logic;
+  IRQ : out std_logic;
+  VICPC : out std_logic_vector(31 downto 0)
+  );
+end entity;
+
+architecture RTL of VIC2 is
+  
+  signal IRQ0_0, IRQ0_1, IRQ1_0, IRQ1_1 : std_logic;
+  signal IRQ1_memo, IRQ0_memo : std_logic;
+  
+begin
+  
+  process(CLK, RST) begin
+    
+    if RST = '1' then
+      IRQ0_0 <= '0';
+      IRQ0_1 <= '0';
+      IRQ1_0 <= '0';
+      IRQ1_1 <= '0';
+      IRQ0_memo <= '0';
+      IRQ1_memo <= '0';
+      
+    elsif rising_edge(CLK) then
+      
+      -- actualisation des registres a chaque front montant
+      IRQ0_0 <= IRQ0;
+      IRQ0_1 <= IRQ0_0;
+      IRQ1_0 <= IRQ1;
+      IRQ1_1 <= IRQ1_0;
+    end if;
+      
+    --gestion des memo
+    if IRQ0_1 = '0' and IRQ0_0 = '1' then
+      IRQ0_memo <= '1';
+    end if;
+    
+    if IRQ1_1 = '0' and IRQ1_0 = '1' then
+      IRQ1_memo <= '1';
+    end if;
+    
+    if serv_irq = '1' then
+      IRQ0_memo <= '0';
+      IRQ1_memo <= '0';
+    end if;
+    
+    --gestion de VIRPC
+    VICPC <= (others => '0'); --par defaut
+    
+    if IRQ1_memo = '1' then
+      VICPC <= x"00000015"; -- 0x15
+    end if;
+    
+    if IRQ0_memo = '1' then
+      VICPC <= x"00000009"; -- 0x9
+    end if;
+    
+  end process;
+  
+  IRQ <= IRQ0_memo or IRQ1_memo;
+  
+  
+end architecture;
