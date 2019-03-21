@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity VIC is port(
-  CLK, RST : in std_logic;
+  CLK, reset : in std_logic;
   serv_irq, IRQ0, IRQ1 : in std_logic;
   IRQ : out std_logic;
   VICPC : out std_logic_vector(31 downto 0)
@@ -17,9 +17,9 @@ architecture RTL of VIC is
   
 begin
   
-  process(CLK, RST) begin
+  process(CLK, reset) begin
     
-    if RST = '1' then
+    if reset = '1' then
       IRQ0_0 <= '0';
       IRQ0_1 <= '0';
       IRQ1_0 <= '0';

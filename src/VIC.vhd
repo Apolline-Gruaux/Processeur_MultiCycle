@@ -47,14 +47,14 @@ begin
     
     if serv_irq = '1' then
       IRQ0_memo <= '0';
-      IRQ1_memo <= '1';
+      IRQ1_memo <= '1'; -- mets a zero
     end if;
     
-    --gestion de VIRPC
+    --gestion de VICPC
     VICPC <= (others => '0'); --par defaut
     
     if IRQ1_memo = '1' then
-      VICPC(3 downto 0) <= "1111"; --0x15
+      VICPC(3 downto 0) <= "1111"; --0x15    VICPC <= x"00000015"; -- 0x15
     end if;
     
     if IRQ0_memo = '1' then
