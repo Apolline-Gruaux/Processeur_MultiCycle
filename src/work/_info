@@ -209,8 +209,16 @@ R35
 !i113 1
 R12
 R13
+<<<<<<< Updated upstream
 Emux21
 R1
+=======
+!s100 BO>ihMAVkUEzfU?830l:_1
+!i10b 1
+Emux_alu_b
+Z61 w1551862433
+R2
+>>>>>>> Stashed changes
 R3
 R4
 R0
@@ -218,6 +226,7 @@ Z36 8C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/MUX21.vhd
 Z37 FC:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/MUX21.vhd
 l0
 L5
+<<<<<<< Updated upstream
 V`ElG@dYEn:R><GLahC7_=3
 !s100 VTE=nXJcQP;:KZi0U<1V^0
 R7
@@ -255,12 +264,87 @@ R4
 R0
 Z43 8C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/MUX41.vhd
 Z44 FC:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/MUX41.vhd
+=======
+VETOGB6c4_EQ5fNPgCPP0_0
+R8
+32
+Z64 !s108 1551862568.906000
+Z65 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_ALU_B.vhd|
+Z66 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_ALU_B.vhd|
+R12
+R13
+!s100 k0[CU[71<iK?kOF=OBOcD2
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 9 mux_alu_b 0 22 ETOGB6c4_EQ5fNPgCPP0_0
+l16
+L14
+VJ9ZJ^7mTRMZSD1K[FlcPK3
+R8
+32
+R64
+R65
+R66
+R12
+R13
+!s100 DiQmIlLNSkRnkI5ERlV1E2
+!i10b 1
+Emux_cpsr
+Z67 w1551863027
+R2
+R3
+R4
+R5
+Z68 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_CPSR.vhd
+Z69 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_CPSR.vhd
+l0
+L5
+VjzW0E]f_fVB][;EohnbI[1
+!s100 R;2hU[X4nSOoNLYPY9GSn1
+R8
+32
+!i10b 1
+Z70 !s108 1551863038.229000
+Z71 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_CPSR.vhd|
+Z72 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_CPSR.vhd|
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 8 mux_cpsr 0 22 jzW0E]f_fVB][;EohnbI[1
+l17
+L15
+VhDgC][P_2oL9W=F39EiJ61
+!s100 VdfW3KNNim9kKPXPK_F@a2
+R8
+32
+!i10b 1
+R70
+R71
+R72
+R12
+R13
+Emux_mem
+Z73 w1551860248
+R2
+R3
+R4
+R5
+Z74 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_MEM.vhd
+Z75 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_MEM.vhd
+>>>>>>> Stashed changes
 l0
 L5
 Vm=A_gzBXMD>KXC54^GI7B0
 !s100 o;KPW5Lz:JBS^`3Xi0ohG3
 R7
 32
+<<<<<<< Updated upstream
 R38
 !i10b 1
 R39
@@ -294,23 +378,118 @@ R4
 R0
 Z47 8C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/RAM64x32.vhd
 Z48 FC:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/RAM64x32.vhd
+=======
+Z76 !s108 1551860255.714000
+Z77 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_MEM.vhd|
+Z78 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_MEM.vhd|
+R12
+R13
+!s100 IeWhN1_YNoZ@]S9DAYD3G1
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 7 mux_mem 0 22 J;oGIoOmAEZ]KHd[IihC83
+l16
+L14
+VZ?c`CFih:B3MlL?Rfa`JU2
+R8
+32
+R76
+R77
+R78
+R12
+R13
+!s100 f9;n8Rjk=k5@b0`[E?dzg1
+!i10b 1
+Emux_reg_busw
+Z79 w1551861439
+R2
+R3
+R4
+R5
+Z80 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_BUSW.vhd
+Z81 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_BUSW.vhd
+l0
+L5
+VQHUg25Jf1fi6SlIM>MAgT0
+R8
+32
+Z82 !s108 1551861447.165000
+Z83 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_BUSW.vhd|
+Z84 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_BUSW.vhd|
+R12
+R13
+!s100 c_lY238ec[L]?<]6^V81T1
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 12 mux_reg_busw 0 22 QHUg25Jf1fi6SlIM>MAgT0
+l16
+L14
+Vzh[Tbh:R@8:_6^W?1iPTk3
+R8
+32
+R82
+R83
+R84
+R12
+R13
+!s100 >oNcDeF<6OkN[N1YM`H>i3
+!i10b 1
+Emux_reg_rb
+Z85 w1551861093
+R2
+R3
+R4
+R5
+Z86 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_RB.vhd
+Z87 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_RB.vhd
+>>>>>>> Stashed changes
 l0
 L42
 Va4<_f4Ii@^TO^1VgVS9cE2
 !s100 =>4JdkaMfQGnF_Sfece;H0
 R7
 32
+<<<<<<< Updated upstream
 R38
 !i10b 1
 R39
 Z49 !s90 -reportprogress|30|-work|work|C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/RAM64x32.vhd|
 Z50 !s107 C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/RAM64x32.vhd|
 !i113 1
+=======
+Z88 !s108 1551861094.103000
+Z89 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_RB.vhd|
+Z90 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/MUX_REG_RB.vhd|
+R12
+R13
+!s100 4H^TFAobIV?>PPZDfOg=42
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 10 mux_reg_rb 0 22 Fkl?46zmBDL>J`5Mdj`fn0
+l16
+L13
+VL=^bFRS]8aO>ReVGz57f^2
+R8
+32
+R88
+R89
+R90
+>>>>>>> Stashed changes
 R12
 R13
 Asyn
 R3
 R4
+<<<<<<< Updated upstream
 DEx4 work 8 ram64x32 0 22 a4<_f4Ii@^TO^1VgVS9cE2
 l97
 L56
@@ -324,12 +503,44 @@ R39
 R49
 R50
 !i113 1
+=======
+R5
+Z91 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/PCExtender.vhd
+Z92 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/PCExtender.vhd
+l0
+L6
+VI6OD:=QNPcDgD2VVIE[UA0
+R8
+32
+Z93 !s108 1550744778.817000
+Z94 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/PCExtender.vhd|
+Z95 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/PCExtender.vhd|
+R12
+R13
+!s100 oTFBZKfgd[iRmcm?FlX:>3
+!i10b 1
+Artl
+R21
+R2
+R3
+R4
+DEx4 work 10 pcextender 0 22 I6OD:=QNPcDgD2VVIE[UA0
+l15
+L13
+VUfOeiM[mPR6PYGCFBfZ`M2
+R8
+32
+R93
+R94
+R95
+>>>>>>> Stashed changes
 R12
 R13
 Ereg32
 R24
 R3
 R4
+<<<<<<< Updated upstream
 R0
 Z51 8C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/REG32.vhd
 Z52 FC:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/REG32.vhd
@@ -345,6 +556,56 @@ R39
 Z53 !s90 -reportprogress|30|-work|work|C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/REG32.vhd|
 Z54 !s107 C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/REG32.vhd|
 !i113 1
+=======
+R5
+Z96 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Register_bench.vhd
+Z97 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Register_bench.vhd
+l0
+L5
+VT4FfAmPFCOMzNH=CX^Tn21
+R8
+32
+Z98 !s108 1550744777.735000
+Z99 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Register_bench.vhd|
+Z100 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Register_bench.vhd|
+R12
+R13
+!s100 n3G5P]TRT]H=XRlQCWeUV3
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 14 register_bench 0 22 T4FfAmPFCOMzNH=CX^Tn21
+l34
+L14
+VQSbGK1O[OVWj8HbO@Bg@]2
+R8
+32
+R98
+R99
+R100
+R12
+R13
+!s100 3^FLzGTaGl?GQA5kWDAAX1
+!i10b 1
+Eregistre32
+Z101 w1550745199
+R2
+R3
+R4
+R5
+Z102 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Registre32.vhd
+Z103 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Registre32.vhd
+l0
+L5
+VheZFgVmZ0C_bdjS65Q6^g2
+R8
+32
+Z104 !s108 1550745242.238000
+Z105 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Registre32.vhd|
+Z106 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/Registre32.vhd|
+>>>>>>> Stashed changes
 R12
 R13
 Artl
@@ -357,6 +618,7 @@ VTR:7^=hH]^@W]V<AKWf?<2
 !s100 aeCEg>RLo`[lc?BB^`VXD1
 R7
 32
+<<<<<<< Updated upstream
 R38
 !i10b 1
 R39
@@ -373,12 +635,67 @@ R4
 R0
 Z55 8C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/register_bank.vhd
 Z56 FC:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/register_bank.vhd
+=======
+R104
+R105
+R106
+R12
+R13
+!s100 bSG;lPJBalWAYJcQ@?W]G2
+!i10b 1
+Eregistrea
+Z107 w1551861791
+R2
+R3
+R4
+R5
+Z108 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreA.vhd
+Z109 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreA.vhd
+l0
+L5
+VSi2XdU^eHOjhNT69bk`PD0
+R8
+32
+Z110 !s108 1551861843.655000
+Z111 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreA.vhd|
+Z112 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreA.vhd|
+R12
+R13
+!s100 @mC>8B>>z;]R><F3]nI1[1
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 9 registrea 0 22 Si2XdU^eHOjhNT69bk`PD0
+l17
+L13
+VCzHJH9>X]i;EG_CPgTeES1
+R8
+32
+R110
+R111
+R112
+R12
+R13
+!s100 jHCTf0^MjlIF9UXl1H[YT2
+!i10b 1
+Eregistreb
+Z113 w1551861834
+R2
+R3
+R4
+R5
+Z114 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreB.vhd
+Z115 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreB.vhd
+>>>>>>> Stashed changes
 l0
 L5
 VZ``N57NY@7SKODFl[lZHT3
 !s100 ?J1[hCWaXGiROVmT6Bhlb3
 R7
 32
+<<<<<<< Updated upstream
 R38
 !i10b 1
 R39
@@ -387,6 +704,52 @@ Z58 !s107 C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/register_bank.
 !i113 1
 R12
 R13
+=======
+Z116 !s108 1551861845.208000
+Z117 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreB.vhd|
+Z118 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreB.vhd|
+R12
+R13
+!s100 V@A49o8?bQ^99<GJ`3a7S2
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 9 registreb 0 22 HH9OMRfG<dl3VVbhZH[]G3
+l17
+L13
+VMR5`3?M5i]E@S0=lWVCAD1
+R8
+32
+R116
+R117
+R118
+R12
+R13
+!s100 e0UU36i`RFN4:f=?`C2l?3
+!i10b 1
+Eregistreinstruction
+Z119 w1551859979
+R2
+R3
+R4
+R5
+Z120 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreInstruction.vhd
+Z121 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreInstruction.vhd
+l0
+L5
+VUA3me6eAGBb<RhjbE9POK3
+R8
+32
+Z122 !s108 1551860073.418000
+Z123 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreInstruction.vhd|
+Z124 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistreInstruction.vhd|
+R12
+R13
+!s100 >_oG6oCXX^DnMaBMG^QMf0
+!i10b 1
+>>>>>>> Stashed changes
 Artl
 R2
 R3
@@ -398,6 +761,7 @@ VYAzkP>:A`PDzKYLVml<YC1
 !s100 HzLeNDgd@]W2BGNJSoV662
 R7
 32
+<<<<<<< Updated upstream
 R38
 !i10b 1
 R39
@@ -413,18 +777,41 @@ R4
 R0
 Z59 8C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/RegLd.vhd
 Z60 FC:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/RegLd.vhd
+=======
+R122
+R123
+R124
+R12
+R13
+!s100 R?mhO=BbCOEn<8jJB6^bc2
+!i10b 1
+Eregistrepc
+Z125 w1551859217
+R2
+R3
+R4
+R5
+Z126 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistrePC.vhd
+Z127 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistrePC.vhd
+>>>>>>> Stashed changes
 l0
 L4
 VD?=aNT]fBYi<d5Ub[Xz6b0
 !s100 bn3kA^JD8J@;oB?21PoV=0
 R7
 32
+<<<<<<< Updated upstream
 R38
 !i10b 1
 R39
 Z61 !s90 -reportprogress|30|-work|work|C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/RegLd.vhd|
 Z62 !s107 C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/RegLd.vhd|
 !i113 1
+=======
+Z128 !s108 1551859614.160000
+Z129 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistrePC.vhd|
+Z130 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/RegistrePC.vhd|
+>>>>>>> Stashed changes
 R12
 R13
 Artl
@@ -437,33 +824,51 @@ VfLT2bC9Q04o5JT3TD702k1
 !s100 81hOBJTniel<zLX5C5M5<3
 R7
 32
+<<<<<<< Updated upstream
 R38
 !i10b 1
 R39
 R61
 R62
 !i113 1
+=======
+R128
+R129
+R130
+>>>>>>> Stashed changes
 R12
 R13
 Etest_arm
 Z63 w1552822091
 R3
 R4
+<<<<<<< Updated upstream
 R0
 Z64 8C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/test_arm.vhd
 Z65 FC:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/test_arm.vhd
+=======
+R5
+Z131 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/test_arm.vhd
+Z132 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/test_arm.vhd
+>>>>>>> Stashed changes
 l0
 L4
 VF2;O0LWJDm9;?TFGz=T3X1
 !s100 ;khPnk1V9f@[jB4K3?e]30
 R7
 32
+<<<<<<< Updated upstream
 Z66 !s110 1552822096
 !i10b 1
 Z67 !s108 1552822096.000000
 Z68 !s90 -reportprogress|300|-work|work|C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/test_arm.vhd|
 Z69 !s107 C:/Users/elyot/Desktop/Processeur Multicycle - VHDL/src/test_arm.vhd|
 !i113 1
+=======
+Z133 !s108 1550744772.658000
+Z134 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/test_arm.vhd|
+Z135 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/test_arm.vhd|
+>>>>>>> Stashed changes
 R12
 R13
 Aarc_test_arm
@@ -476,12 +881,18 @@ VTSf>^LMh[j]oNF3O>U^eH0
 !s100 K[OM=ik6NhDAjOkV;=b4a3
 R7
 32
+<<<<<<< Updated upstream
 R66
 !i10b 1
 R67
 R68
 R69
 !i113 1
+=======
+R133
+R134
+R135
+>>>>>>> Stashed changes
 R12
 R13
 Evic
@@ -489,15 +900,22 @@ Z70 w1552829691
 R2
 R3
 R4
+<<<<<<< Updated upstream
 Z71 dC:/Users/elyot/Desktop/Processeur_MultiCycle/src
 Z72 8C:/Users/elyot/Desktop/Processeur_MultiCycle/src/VIC.vhd
 Z73 FC:/Users/elyot/Desktop/Processeur_MultiCycle/src/VIC.vhd
+=======
+R5
+Z136 8C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/VIC.vhd
+Z137 FC:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/VIC.vhd
+>>>>>>> Stashed changes
 l0
 L5
 VET<>f0Y7DD5T=bVYc652T1
 !s100 MN5>IkemLOc[Cc2jkMfVT3
 R7
 32
+<<<<<<< Updated upstream
 Z74 !s110 1552829697
 !i10b 1
 Z75 !s108 1552829697.000000
@@ -506,6 +924,15 @@ Z76 !s90 -reportprogress|300|-work|work|C:/Users/elyot/Desktop/Processeur_MultiC
 !i113 1
 R12
 R13
+=======
+Z138 !s90 -reportprogress|300|-work|work|C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/VIC.vhd|
+R12
+R13
+Z139 !s107 C:/Users/apoll/OneDrive/Documents/POLYTECH/2018 2019/SEMESTRE 6/VHDL/Processeur_MultiCycle/src/VIC.vhd|
+!s100 `RCm1QHmGAnIg5>[KLJ4J1
+!i10b 1
+!s108 1550749612.325000
+>>>>>>> Stashed changes
 Artl
 R2
 R3
@@ -517,6 +944,7 @@ V8ag90z@[0294=`F;TNlCB1
 !s100 Vo7J^`:@j[[biLZb0KgC@2
 R7
 32
+<<<<<<< Updated upstream
 R74
 !i10b 1
 R75
@@ -525,3 +953,13 @@ Z77 !s107 C:/Users/elyot/Desktop/Processeur_MultiCycle/src/VIC.vhd|
 !i113 1
 R12
 R13
+=======
+R138
+R12
+R13
+w1550749518
+R139
+!s108 1550749521.715000
+!s100 Y<2R`9MAX5UFV>g;iMH:=1
+!i10b 1
+>>>>>>> Stashed changes
