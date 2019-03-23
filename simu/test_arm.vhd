@@ -49,14 +49,34 @@ begin
     irq0t <='0';
     irq1t <= '0';
 
-    wait for 7 us;
+    wait for 10 us;
 
     irq1t <= '1';
 
-    wait for 200 ns;
+    wait for 20 ns;
+	
+    irq1t <= '0';
 
-    wait for 5800 ns;
+    wait for 10 us;
 
+    irq0t <= '1';
+
+    wait for 20 ns;
+
+    irq0t <= '0';
+
+    wait for 10 us;
+
+    irq1t <= '1';
+
+    irq0t <= '1';
+
+    wait for 20 ns;
+
+    irq0t <= '0';
+    irq1t <= '1';
+
+    wait for 10 us;
 end process;
   
 

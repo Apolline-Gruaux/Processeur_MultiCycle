@@ -157,7 +157,7 @@ architecture archi of DataPath is
 
 	----------------------------------------------------
 	-- Extenseur 32 Bits
-	component extSign is
+	component imm_extender is
 	generic(n: natural:=8);
 	port(
 		e	: in 	std_logic_vector(n-1 downto 0);
@@ -337,12 +337,12 @@ RegB0: REG32 port map(
 			dataout		=>	RegB);
 
 -- Extenseur 8=>32
-Ext8_32 : extSign generic map(8) port map(
+Ext8_32 : imm_extender generic map(8) port map(
 			e				=>	IR(7 downto 0),
 			s				=>	Imm8_32);
 
 -- Extenseur 24=>32
-Ext24_32: extSign generic map(24) port map(
+Ext24_32: imm_extender generic map(24) port map(
 			e				=>	IR(23 downto 0),
 			s				=>	Imm24_32);
 

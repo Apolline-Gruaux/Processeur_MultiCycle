@@ -1,69 +1,78 @@
-library ieee;
-use ieee.std_logic_1164.all;
+library IEEE;
+use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity VIC is port(
-  CLK, reset : in std_logic;
-  serv_irq, IRQ0, IRQ1 : in std_logic;
-  IRQ : out std_logic;
-  VICPC : out std_logic_vector(31 downto 0)
-  );
+entity VIC is
+	port(
+		CLK : in std_logic;
+		RST : in std_logic;
+		serv_irq : in std_logic;
+		IRQ0, IRQ1 : in std_logic;
+		IRQ : out std_logic;
+		VICPC : out std_logic_vector(31 downto 0)
+	);
 end VIC;
 
 architecture RTL of VIC is
-  
-  signal IRQ0_0, IRQ0_1, IRQ1_0, IRQ1_1 : std_logic;
-  signal IRQ1_memo, IRQ0_memo : std_logic;
-  
+Signal IRQ0_n, IRQ0_n_1, IRQ0_memo : std_logic;
+Signal IRQ1_n, IRQ1_n_1,  IRQ1_memo : std_logic;
+
 begin
-  
-  process(CLK, reset) begin
-    
-    if reset = '1' then
-      IRQ0_0 <= '0';
-      IRQ0_1 <= '0';
-      IRQ1_0 <= '0';
-      IRQ1_1 <= '0';
-      IRQ0_memo <= '0';
-      IRQ1_memo <= '0';
-      
-    elsif rising_edge(CLK) then
-      
-      -- actualisation des registres a chaque front montant
-      IRQ0_0 <= IRQ0;
-      IRQ0_1 <= IRQ0_0;
-      IRQ1_0 <= IRQ1;
-      IRQ1_1 <= IRQ1_0;
-    end if;
-      
-    --gestion des memo
-    if IRQ0_1 = '0' and IRQ0_0 = '1' then
-      IRQ0_memo <= '1';
-    end if;
-    
-    if IRQ1_1 = '0' and IRQ1_0 = '1' then
-      IRQ1_memo <= '1';
-    end if;
-    
-    if serv_irq = '1' then
-      IRQ0_memo <= '0';
-      IRQ1_memo <= '1';
-    end if;
-    
-    --gestion de VIRPC
-    VICPC <= (others => '0'); --par defaut
-    
-    if IRQ1_memo = '1' then
-      VICPC(3 downto 0) <= "1111"; --0x15
-    end if;
-    
-    if IRQ0_memo = '1' then
-      VICPC(3 downto 0) <= "1001"; --0x9
-    end if;
-    
-  end process;
-  
-  IRQ <= IRQ0_memo or IRQ1_memo;
-  
-  
-end architecture;
+	IRQ <= IRQ1_memo or IRQ0_memo;
+
+	echantillon: process(CLK, RST)
+		begin
+
+			if RST = '1' then
+				IRQ0_n <= '0';
+				IRQ0_n_1 <= '0';
+
+				IRQ1_n <= '0';
+				IRQ1_n_1 <= '0';
+
+			elsif rising_edge(clk) then
+
+				IRQ0_n_1 <= IRQ0_n;
+				IRQ0_n <= IRQ0;
+
+				IRQ1_n_1 <= IRQ1_n;
+				IRQ1_n <= IRQ1;
+
+			end if;
+		end process echantillon;
+
+		transition: process(IRQ0_n, IRQ0_n_1, IRQ1_n, IRQ1_n_1, serv_irq, RST)
+			begin
+				if(RST = '1') then
+					IRQ0_memo <= '0';
+					IRQ1_memo <= '0';
+				elsif(serv_irq = '1') then
+					IRQ0_memo <= '0';
+					IRQ1_memo <= '0';
+				end if;
+				
+				if(IRQ0_n = '1' and IRQ0_n_1 = '0') then
+					IRQ0_memo <= '1';
+
+				elsif(IRQ1_n = '1' and IRQ1_n_1 = '0') then
+					IRQ1_memo <= '1';
+
+				end if;
+				
+				
+			end process transition;
+
+		requetes: process(IRQ0_memo, IRQ1_memo, rst)
+			begin
+				if(RST = '1') then
+					VICPC <= (others => '0');
+				elsif(IRQ0_memo = '1') then
+					VICPC <= std_logic_vector(to_unsigned(9, 32));
+				elsif(IRQ1_memo = '1') then
+					VICPC <= std_logic_vector(to_unsigned(21, 32));
+				else
+					VICPC <= std_logic_vector(to_unsigned(0, 32));
+				end if;
+			end process;
+
+end RTL;
